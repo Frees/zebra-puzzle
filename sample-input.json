@@ -1,0 +1,79 @@
+{
+  "colors": ["red", "green", "ivory", "yellow", "blue"],
+  "nationalities": ["Englishman", "Spaniard", "Ukrainian", "Norwegian", "Japanese"],
+  "drinks": ["coffee", "tea", "milk", "juice", "water"],
+  "smokes": ["Old Gold", "Kools", "Chesterfield", "Lucky Strike", "Parliament"],
+  "pets": ["dog", "snails", "fox", "horse", "zebra"],
+  "constraints": [
+    {
+      "type": "SameHouse",
+      "attribute1": {"type": "Nationality", "value": "Englishman"},
+      "attribute2": {"type": "Color", "value": "red"}
+    },
+    {
+      "type": "SameHouse",
+      "attribute1": {"type": "Nationality", "value": "Spaniard"},
+      "attribute2": {"type": "Pet", "value": "dog"}
+    },
+    {
+      "type": "SameHouse",
+      "attribute1": {"type": "Drink", "value": "coffee"},
+      "attribute2": {"type": "Color", "value": "green"}
+    },
+    {
+      "type": "SameHouse",
+      "attribute1": {"type": "Nationality", "value": "Ukrainian"},
+      "attribute2": {"type": "Drink", "value": "tea"}
+    },
+    {
+      "type": "RightOf",
+      "attributeRight": {"type": "Color", "value": "green"},
+      "attributeLeft": {"type": "Color", "value": "ivory"}
+    },
+    {
+      "type": "SameHouse",
+      "attribute1": {"type": "Smoke", "value": "Old Gold"},
+      "attribute2": {"type": "Pet", "value": "snails"}
+    },
+    {
+      "type": "SameHouse",
+      "attribute1": {"type": "Smoke", "value": "Kools"},
+      "attribute2": {"type": "Color", "value": "yellow"}
+    },
+    {
+      "type": "PositionIs",
+      "attribute": {"type": "Drink", "value": "milk"},
+      "position": 3
+    },
+    {
+      "type": "PositionIs",
+      "attribute": {"type": "Nationality", "value": "Norwegian"},
+      "position": 1
+    },
+    {
+      "type": "NextTo",
+      "attribute1": {"type": "Smoke", "value": "Chesterfield"},
+      "attribute2": {"type": "Pet", "value": "fox"}
+    },
+    {
+      "type": "NextTo",
+      "attribute1": {"type": "Smoke", "value": "Kools"},
+      "attribute2": {"type": "Pet", "value": "horse"}
+    },
+    {
+      "type": "SameHouse",
+      "attribute1": {"type": "Smoke", "value": "Lucky Strike"},
+      "attribute2": {"type": "Drink", "value": "juice"}
+    },
+    {
+      "type": "SameHouse",
+      "attribute1": {"type": "Nationality", "value": "Japanese"},
+      "attribute2": {"type": "Smoke", "value": "Parliament"}
+    },
+    {
+      "type": "NextTo",
+      "attribute1": {"type": "Nationality", "value": "Norwegian"},
+      "attribute2": {"type": "Color", "value": "blue"}
+    }
+  ]
+}
